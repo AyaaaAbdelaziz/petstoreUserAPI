@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [UsersAPIsuite ]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="UserAPITest(failed)">
     <classes>
-      <class name="api.CreateListOfUsersApiTest_Post">
+      <class name="api.DeleteUserApiTest_Delete">
         <methods>
-          <include name="createListofUsers"/>
+          <include name="DeleteUser"/>
         </methods>
-      </class> <!-- api.CreateListOfUsersApiTest_Post -->
+      </class> <!-- api.DeleteUserApiTest_Delete -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- UserAPITest(failed) -->
+</suite> <!-- Failed suite [UsersAPIsuite ] -->

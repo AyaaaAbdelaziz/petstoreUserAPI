@@ -27,7 +27,7 @@ public class DeleteUserApiTest_Delete extends TestBase{
 	public void DeleteUser() {
 		BaseUri();
 		BasePathReset();
-		BasePath("/"+"tester2");
+		BasePath("/"+"tester1");
 		RequestSpecification request= RestAssured.given();
 		request.header("Content-Type","application/json");
 		Response response = request.request(Method.DELETE);
