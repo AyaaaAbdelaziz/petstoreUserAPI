@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="UsersAPIsuite ">
+
+	<test  name="UserAPITest">
+	
+		<classes>
+		
+			<class name="api.CreateListOfUsersApiTest_Post" />
+			<class name="api.CreatUserByLoggedInUserApiTest_Post" />
+			<class name="api.DeleteUserApiTest_Delete" />
+			<class name="api.GetUserByUsernameApiTest_Get" />
+			<class name="api.UpdateUserApi_Put" />
+			<class name="api.UserLoginApiTest_Get"/>
+			
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
