@@ -3,6 +3,7 @@ package api;
 import org.testng.annotations.Test;
 
 import base.TestBase;
+import io.qameta.allure.Flaky;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
@@ -23,11 +24,12 @@ public class DeleteUserApiTest_Delete extends TestBase{
 		String ExpireDate=response.header("X-Expires-After");
 		System.out.println("Expires After: "+ExpireDate);
 	}
+	@Flaky
 	@Test(priority=2)
 	public void DeleteUser() {
 		BaseUri();
 		BasePathReset();
-		BasePath("/"+"tester1");
+		BasePath("/"+"tester3");
 		RequestSpecification request= RestAssured.given();
 		request.header("Content-Type","application/json");
 		Response response = request.request(Method.DELETE);
