@@ -1,5 +1,5 @@
 # petstore
-*To run form command line:*<br/>
+*To run from command line:*<br/>
 1.clone the repository<br/>
 2.go to the folder <br/>
 3.open cmd<br/>
